@@ -2,35 +2,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>한국조선해양</title>
+    <title>삼성중공업</title>
     <style>
-      h1{
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-decoration: none;
-      }
-      button{
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 50px;
-        width: 200px;
-      }
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
       </style>
   </head>
   <body>
-    <h1>한국조선해양</h1>
+    <h1>삼성중공업</h1>
+    <div id="grid">
 
-    <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=010140'">네이버증권</button>
-    <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNQspjoDigaUTyUdxEZBkVCeHzRNXQ%3A1573561049761&ei=2aLKXfX5LaKvmAXq7oboCw&q=%EC%82%BC%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85&oq=%EC%82%BC%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85&gs_l=psy-ab.3..0i131j0i131i67j0i20i263j0l7.83555.85002..85098...0.0..0.146.1702.0j14......0....1..gws-wiz.......0i67.2ZLsXPINvC4&ved=0ahUKEwi1ypzb0-TlAhWiF6YKHWq3Ab0Q4dUDCAs&uact=5'">구글 검색</button>
+      <ul>
+        <br>
+        <li><a href="한국조선해양.html"  >한국 조선 해양</a></li>
+        <li><a href="대우조선해양.html"  >대우 조선 해양</a></li>
+        <li><a href="삼성중공업.html" id="active">삼성중공업</a></li>
+      </ul>
+      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=010140'">네이버증권</button>
+      <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNQspjoDigaUTyUdxEZBkVCeHzRNXQ%3A1573561049761&ei=2aLKXfX5LaKvmAXq7oboCw&q=%EC%82%BC%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85&oq=%EC%82%BC%EC%84%B1%EC%A4%91%EA%B3%B5%EC%97%85&gs_l=psy-ab.3..0i131j0i131i67j0i20i263j0l7.83555.85002..85098...0.0..0.146.1702.0j14......0....1..gws-wiz.......0i67.2ZLsXPINvC4&ved=0ahUKEwi1ypzb0-TlAhWiF6YKHWq3Ab0Q4dUDCAs&uact=5'">구글 검색</button>
 
 
 
+
+
+    </div>
   </body>
 </html>
