@@ -9,6 +9,9 @@
         font-size: 60px;
         text-align: center;
         text-decoration: none;
+        border-bottom: 1px solid black;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
       }
       button{
         background-color: #4ed9b8;
@@ -23,25 +26,41 @@
         width: 200px;
       }
       body{
-        background-color:rgb(16, 128, 32);
+        background-color:rgb(256, 256, 256);
+      }
+      a{
+        text-decoration:none;
+        color:black;
+      }
+      ul {
+        border-right: 1px solid black;
+        width: 200px;
+        margin: 0px;
+        margin-bottom: fr;
+        background-color: rgb( 256, 256, 256);
+      }
+      #active {
+        color:red;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 250px 350px 350px 1fr;
       }
     </style>
   </head>
   <body>
     <h1>풍력</h1>
+    <div id="grid">
+        <ul>
+          <br>
+          <li><a href="씨에스윈드.html">씨에스윈드</a></li>
+          <li><a href="유니슨.html" id="active">유니슨</a></li>
+          <li><a href="동국s&c.html">동국S&C</a></li>
+        </ul>
 
-      <button>씨에스윈드</button>
-      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=112610'">씨에스윈드(증권)</button>
-      <button class="button" onclick="location.href='https://www.google.com/search?q=%EC%94%A8%EC%97%90%EC%8A%A4%EC%9C%88%EB%93%9C&rlz=1C1CHBD_enKR874KR874&oq=%EC%94%A8%EC%97%90%EC%8A%A4%EC%9C%88%EB%93%9C&aqs=chrome..69i57j35i39j0j69i61j69i60j69i61.1647j0j4&sourceid=chrome&ie=UTF-8'">씨에스윈드(검색)</button>
-
-      <button>유니슨</button>
-      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=018000'">유니슨(증권)</button>
-      <button class="button" onclick="location.href='https://www.google.co.kr/search?sxsrf=ACYBGNRmbTmvF817Rm4bJk2fQH8_RPR-WQ%3A1573057482025&ei=yvPCXeSYAYv2wAPSw6PwCQ&q=%EC%9C%A0%EB%8B%88%EC%8A%A8&oq=%EC%9C%A0%EB%8B%88%EC%8A%A8&gs_l=psy-ab.3..35i39l2j0j0i20i263j0i67j0l5.8193.8193..8431...0.0..0.111.111.0j1......0....1..gws-wiz.AiKQ4Y6kQfs&ved=0ahUKEwjkpbXj_9XlAhULO3AKHdLhCJ4Q4dUDCAs&uact=5'">유니슨(검색)</button>
-
-      <button>동국S&C</button>
-      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=100130'">동국S&C(증권)</button>
-      <button class="button" onclick="location.href='https://www.google.com/search?q=%EB%8F%99%EA%B5%ADs%26c&rlz=1C1CHBD_enKR874KR874&oq=%EB%8F%99%EA%B5%AD&aqs=chrome.2.69i57j0j35i39j69i60j69i61j69i60.3653j0j7&sourceid=chrome&ie=UTF-8'">동국S&C(검색)</button>
-
-
+          <button class="button" onclick="location.href='씨에스윈드.html'">씨에스윈드</button>
+          <button class="button" onclick="location.href='유니슨.html'">유니슨</button>
+          <button class="button" onclick="location.href='동국s&c.html'">동국S&C</button>
+    </div>
   </body>
 </html>
