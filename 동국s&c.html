@@ -4,35 +4,62 @@
     <meta charset="utf-8">
     <title>동국S&C</title>
     <style>
-      h1{
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-decoration: none;
-      }
-      button{
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 20px;
-        margin:30px;
-        width: 200px;
-      }
-    </style>
-    <script>
-      function  route(){
-        
-
-      }
-    </script>
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
+      </style>
   </head>
   <body>
     <h1>동국S&C</h1>
-    <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=100130'">네이버증권</button>
-    <button class="button" onclick="location.href='https://www.google.com/search?q=%EB%8F%99%EA%B5%ADs%26c&rlz=1C1CHBD_enKR874KR874&oq=%EB%8F%99%EA%B5%AD&aqs=chrome.2.69i57j0j35i39j69i60j69i61j69i60.3653j0j7&sourceid=chrome&ie=UTF-8'">구글검색</button>
+    <div id="grid">
+
+      <ul>
+        <br>
+        <li><a href="씨에스윈드.html" >씨에스윈드</a></li>
+        <li><a href="유니슨.html" >유니슨</a></li>
+        <li><a href="동국s&c.html" id="active">동국S&C</a></li>
+      </ul>
+      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=100130'">네이버증권</button>
+      <button class="button" onclick="location.href='https://www.google.com/search?q=%EB%8F%99%EA%B5%ADs%26c&rlz=1C1CHBD_enKR874KR874&oq=%EB%8F%99%EA%B5%AD&aqs=chrome.2.69i57j0j35i39j69i60j69i61j69i60.3653j0j7&sourceid=chrome&ie=UTF-8'">구글검색</button>
+    </div>
   </body>
 </html>
