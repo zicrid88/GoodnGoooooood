@@ -4,33 +4,81 @@
     <meta charset="utf-8">
     <title>성우하이텍</title>
     <style>
-      h1{
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-decoration: none;
-      }
-      button{
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 50px;
-        width: 200px;
-      }
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+
       </style>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"><img src="home.png" width="10%" onclick="location.href='index.html'" align="right"></div>
+      <div class="div6"></div>
+    </div>
     <h1>성우하이텍</h1>
+    <div id="grid">
 
-    <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=015750'">네이버증권</button>
-    <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&biw=1536&bih=722&sxsrf=ACYBGNRyCkHtuN3J0eKJFk2jh_gAhPaX4A%3A1573563988200&ei=VK7KXaTsC8vEmAXSsJWoDg&q=%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D+%EB%A6%AC%ED%8F%AC%ED%8A%B8&oq=%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D+%EB%A6%AC%ED%8F%AC%ED%8A%B8&gs_l=psy-ab.3..33i160.38525.40873..41017...5.0..5.127.2133.1j18......0....1..gws-wiz.......0j0i131j35i39j0i20i263.Ko-4_JNZw40&ved=0ahUKEwik5rDU3uTlAhVLIqYKHVJYBeUQ4dUDCAs&uact=5'">구글 검색</button>
+      <ul>
+        <br>
+        <li><a href="현대차.html" >현대차</a></li>
+        <li><a href="기아차.html" >기아차</a></li>
+        <li><a href="현대모비스.html">현대모비스</a></li>
+        <li><a href="만도.html">만도</a></li>
+        <li><a href="성우하이텍.html" id="active">성우하이텍</a></li>
+        <li><a href="한온시스템.html">한온시스템</a></li>
+      </ul>
+
+          <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=015750'">네이버증권</button>
+          <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&biw=1536&bih=722&sxsrf=ACYBGNRyCkHtuN3J0eKJFk2jh_gAhPaX4A%3A1573563988200&ei=VK7KXaTsC8vEmAXSsJWoDg&q=%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D+%EB%A6%AC%ED%8F%AC%ED%8A%B8&oq=%EC%84%B1%EC%9A%B0%ED%95%98%EC%9D%B4%ED%85%8D+%EB%A6%AC%ED%8F%AC%ED%8A%B8&gs_l=psy-ab.3..33i160.38525.40873..41017...5.0..5.127.2133.1j18......0....1..gws-wiz.......0j0i131j35i39j0i20i263.Ko-4_JNZw40&ved=0ahUKEwik5rDU3uTlAhVLIqYKHVJYBeUQ4dUDCAs&uact=5'">구글 검색</button>
 
 
-
+    </div>
   </body>
 </html>

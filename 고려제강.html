@@ -4,33 +4,74 @@
     <meta charset="utf-8">
     <title>고려제강</title>
     <style>
-      h1{
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-decoration: none;
-      }
-      button{
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 50px;
-        width: 200px;
-      }
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
       </style>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"><img src="home.png" width="10%" onclick="location.href='index.html'" align="right"></div>
+      <div class="div6"></div>
+    </div>
     <h1>고려제강</h1>
+    <div id="grid">
+      <ul>
+        <br>
+        <li><a href="포스코.html">포스코</a></li>
+        <li><a href="현대제철.html">현대제철</a></li>
+        <li><a href="고려제강.html" id="active">고려제강</a></li>
+      </ul>
+      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=002240'">네이버증권</button>
+      <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNRVFHGpwhdJAj71T4eb8egGxZ9ANA%3A1573561359639&ei=D6TKXdrTJruMr7wPtsyEkAM&q=%EA%B3%A0%EB%A0%A4%EC%A0%9C%EA%B0%95&oq=%EA%B3%A0%EB%A0%A4%EC%A0%9C%EA%B0%95&gs_l=psy-ab.3..0l10.416803.417697..417861...3.1..3.181.1128.0j9......0....1..gws-wiz.......0i71j0i131j0i67.w9YSyt94QFk&ved=0ahUKEwial_7u1OTlAhU7xosBHTYmATIQ4dUDCAs&uact=5'">구글 검색</button>
 
-    <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=002240'">네이버증권</button>
-    <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNRVFHGpwhdJAj71T4eb8egGxZ9ANA%3A1573561359639&ei=D6TKXdrTJruMr7wPtsyEkAM&q=%EA%B3%A0%EB%A0%A4%EC%A0%9C%EA%B0%95&oq=%EA%B3%A0%EB%A0%A4%EC%A0%9C%EA%B0%95&gs_l=psy-ab.3..0l10.416803.417697..417861...3.1..3.181.1128.0j9......0....1..gws-wiz.......0i71j0i131j0i67.w9YSyt94QFk&ved=0ahUKEwial_7u1OTlAhU7xosBHTYmATIQ4dUDCAs&uact=5'">구글 검색</button>
-
-
-
+    </div>
   </body>
 </html>
