@@ -2,30 +2,68 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>아프리카TV</title>
+    <title>한국 조선 해양</title>
     <style>
-      h1 {
-        color: black;
-        font-size: 70px;
-        text-align: center;
-        text-decoration: none;
-      }
-
-      button {
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin:30px;
-        width: 200px;
-      }
-    </style>
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
+      </style>
   </head>
   <body>
+    <h1>한국 조선 해양</h1>
+    <div id="grid">
 
+      <ul>
+        <br>
+        <li><a href="네이버.html"  >네이버</a></li>
+        <li><a href="카카오.html">카카오</a></li>
+        <li><a href="아프리카TV.html"  id="active">아프리카TV</a></li>
+        <li><a href="NHN.html" >NHN</a></li>
+      </ul>
+
+      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=067160'">네이버증권</button>
+      <button class="button" onclick="location.href='https://www.google.co.kr/search?biw=1920&bih=937&sxsrf=ACYBGNScmKDzVAzbEULf2v3cabSyH2k8zQ%3A1573695970280&ei=4rHMXdfVEM_X-QbOz76ADQ&q=%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4tv+%EB%A6%AC%ED%8F%AC%ED%8A%B8&oq=%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4tv+%EB%A6%AC%ED%8F%AC%ED%8A%B8&gs_l=psy-ab.3...132300.138542..138733...12.0..5.122.2351.2j20......0....1..gws-wiz.....10..35i39j0i10j0j0i10i42j0i131j35i362i39j0i67j33i160.LI8NV0nHg3w&ved=0ahUKEwjXzquqyujlAhXPa94KHc6nD9AQ4dUDCAs&uact=5'">구글 검색</button>
+
+
+    </div>
   </body>
 </html>
