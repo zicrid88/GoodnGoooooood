@@ -4,33 +4,73 @@
     <meta charset="utf-8">
     <title>GS칼텍스</title>
     <style>
-      h1{
-        color: black;
-        font-size: 60px;
-        text-align: center;
-        text-decoration: none;
-      }
-      button{
-        background-color: #4ed9b8;
-        border: 1px;
-        color: white;
-        padding: 18px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 50px;
-        width: 200px;
-      }
+    h1{
+      color: black;
+      font-size: 60px;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+    }
+    button{
+      background-color: #4ed9b8;
+      border: 1px;
+      color: white;
+      padding: 18px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin:30px;
+      width: 200px;
+    }
+    body{
+      background-color:rgb(256, 256, 256);
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    ul {
+      border-right: 1px solid black;
+      width: 200px;
+      margin: 0px;
+      margin-bottom: fr;
+      background-color: rgb( 256, 256, 256);
+    }
+    #active {
+      color:red;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 300px 1fr 2fr;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
       </style>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"><img src="home.png" width="10%" onclick="location.href='index.html'" align="right"></div>
+      <div class="div6"></div>
+    </div>
     <h1>GS칼텍스</h1>
-
-    <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=078930'">네이버증권</button>
-    <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNR2N_wsxfjkMFcpjDPg2wLaWM6DYw%3A1573562192000&ei=T6fKXZzXPMeIr7wPv_WYkAw&q=GS%EC%B9%BC%ED%85%8D%EC%8A%A4+%EB%89%B4%EC%8A%A4&oq=GS%EC%B9%BC%ED%85%8D%EC%8A%A4+%EB%89%B4%EC%8A%A4&gs_l=psy-ab.3..0.10545.11635..11778...1.0..1.145.708.0j6......0....1..gws-wiz.......35i39.ZWLjGaiFCwI&ved=0ahUKEwjcuvH71-TlAhVHxIsBHb86BsIQ4dUDCAs&uact=5'">구글 검색</button>
-
-
-
+    <div id="grid">
+      <ul>
+        <br>
+        <li><a href="GS.html" id="active">GS칼텍스</a></li>
+        <li><a href="SKinnovation.html">SK이노베이션</a></li>
+        <li><a href="SOil.html">에스오일</a></li>
+      </ul>
+      <button class="button" onclick="location.href='https://finance.naver.com/item/main.nhn?code=078930'">네이버증권</button>
+      <button class="button" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_enKR874KR874&sxsrf=ACYBGNR2N_wsxfjkMFcpjDPg2wLaWM6DYw%3A1573562192000&ei=T6fKXZzXPMeIr7wPv_WYkAw&q=GS%EC%B9%BC%ED%85%8D%EC%8A%A4+%EB%89%B4%EC%8A%A4&oq=GS%EC%B9%BC%ED%85%8D%EC%8A%A4+%EB%89%B4%EC%8A%A4&gs_l=psy-ab.3..0.10545.11635..11778...1.0..1.145.708.0j6......0....1..gws-wiz.......35i39.ZWLjGaiFCwI&ved=0ahUKEwjcuvH71-TlAhVHxIsBHb86BsIQ4dUDCAs&uact=5'">구글 검색</button>
+    </div>
   </body>
 </html>
